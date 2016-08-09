@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sign Up</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="signin_signup.css" type="text/css" />
+  <meta name="description" content>
+  <meta name="author" content>
+  <meta name="description" content>
+  <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+  <title>Carousal Sample</title>
+  <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="http://getbootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+  <link rel="stylesheet" href="http://getbootstrap.com/examples/carousal/carousal.css">
+  </head>
+
+  <body data-gr-c-s-loaded="true">
+    <div class="navbar-wrapper">
+          <div class="container">
+
+            <nav class="navbar navbar-inverse navbar-static-top">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">TO DO</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="http://localhost/addemp/Home.html">Home</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+
+    <div class="container">
+
+      <form class="form-signin" id="inputForm" method="get" action="">
+        <h2 class="form-signin-heading">Please sign up</h2>
+        <label for="firstName" class="sr-only">First Name</label>
+        <input type="text" id="fName" class="form-control" placeholder="First Name" name="firstname" required="true" autofocus="" >
+        <label for="lastName" class="sr-only">Last Name</label>
+        <input type="text" id="lName" class="form-control" placeholder="Last Name" name="lastname" required="true">
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="emailaddress" required="true">
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inPassword" class="form-control" placeholder="Password" name="inputpassword" required="true">
+        <label for="confirmPassword" class="sr-only">Confirm Password</label>
+        <input type="password" id="conPassword" class="form-control" placeholder="Confirm Password" name="confirmPassword" required="true">
+        <button class="btn btn-lg btn-primary btn-block" name="submit" type="submit" value="save data" onclick="addUser();">Sign up</button>
+      </form>
+    </div>
+
+
+
+      <script type="text/javascript">
+      function addUser(){
+        document.getElementById("inputForm").action="Insert.php";
+      }
+
+      </script>
+
+
+
+</body>
+
+</html>
